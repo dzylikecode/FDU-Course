@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>docsify plugins</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="integration of docsify plugins" />
+    <meta name="keywords" content="docsify, plugins" />
+    <meta name="author" content="Dz" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- docsify-themeable -->
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: dark)"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme: light)"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"
+    />
+    <!-- End -->
+    <!-- slidebar collapse -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css"
+    />
+    <!-- begin for markmap -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-view"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.14.3/dist/browser/index.min.js"></script>
+    <!-- End -->
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.gUserName = "dzylikecode";
+      window.gReposName = "FDU-Course";
+      window.gBranchName = "main";
+    </script>
+    <!-- 一些常用的全局变量 -->
+    <script src="./assets/js/globalVar.js"></script>
+    <script>
+      window.$docsify = {
+        name: "Tree", // 目录的标题
+        repo: window.gReposLink, // 右上角的挂件
+        loadNavbar: "NAVIGATION.md",
+        loadSidebar: "SUMMARY.md",
+        homepage: "/docs/README.md",
+        alias: {
+          ".*/NAVIGATION.md": "/docs/NAVIGATION.md",
+          "/SUMMARY.md": "/docs/SUMMARY.md",
+        },
+        subMaxLevel: 3, // 子目录最大层级, 有助于显示 markdown 的层级
+        auto2top: true, // 自动跳转至顶部
+      };
+      window.gCodeDocMaps = [
+        {
+          docs: "docs/",
+          cache: "assets/cache/",
+          code: "https://github.com/DDLife/scripts-DST/blob/main/",
+          ext: ".lua",
+          exclude: ["README", "SUMMARY"],
+          global: [""],
+          remoteRepos: [
+            // {
+            //   docs: "https://DDLife.github.io/zh/#/ref/",
+            //   cache: "https://DDLife.github.io/zh/assets/cache/",
+            //   code: "https://github.com/DDLife/zh/blob/main/code/",
+            //   ext: ".lua",
+            // },
+          ],
+        },
+      ];
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!-- copy to clipboard -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <!-- slidebar collapse -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+    <!-- search -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
+    <!-- zoom image -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <!-- docsify-themeable -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+    <script>
+      addBackToTop({
+        diameter: 56,
+        backgroundColor: "rgb(255, 82, 82)",
+        textColor: "#fff",
+      });
+    </script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-cpp.min.js"></script> -->
+    <script type="module" src="./assets/js/docsify.mjs"></script>
+  </body>
+</html>
