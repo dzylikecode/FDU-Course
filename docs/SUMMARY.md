@@ -1,4 +1,5 @@
 - [:boat:](/README.md)
 - [English Public Speaking](/docs/English-Public-Speaking/)
-- [自然辨证法](/docs/自然辩证法/)
+- 自然辨证法
+  - [cover](/docs/自然辩证法/)
   - [第一周](/docs/自然辩证法/01.md)
