@@ -1,1 +1,5 @@
-- [:house:](https://dzylikecode.github.io/)
+- [:boat:](/docs/)
+- 机械
+  - [应用数学方法](/docs/应用数学方法/)
+  - [自然辨证法](/docs/自然辩证法/)
+  - [English Public Speaking](/docs/English-Public-Speaking/)
