@@ -58,3 +58,27 @@ Assignment of W1: (Pair Work) Read aloud the whole syllabus of English Public Sp
 - accommodate
 - tongue
 - vowel
+
+### notes
+
+表达具备包容性更好, inclusive
+
+- 人称代词
+
+  比如使用 we're supposed to do sth 比 you should do sth 好
+
+- 动词
+
+  I teach you. VS I share with you
+
+- 模糊一些
+
+  I would like to VS I want to -> I want to 给人感觉只考虑自己, I would like to 是表达一种倾向, 给其他人尊重, 留有余地
+
+- aim high, achieve average
+
+- 不要忘记自己的时代背景, 我们这一代属于数字居民(digital citizen)
+
+- visualize idea, 不一定是图像, 描述故事有丰富的五官感受也是一种 visualization
+
+和同伴上台交替读英语的时候, 自己思维就是机械式地想尽量读好. 中间出了差错了, 也是愣在那里. 而老师在后面组的表现中, 会鼓励良好的团队合作, 提供改善的意见. 这有些改变自己的思维.
