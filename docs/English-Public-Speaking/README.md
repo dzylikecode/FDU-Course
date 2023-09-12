@@ -4,12 +4,13 @@
 
 ![](assets/qrcode.bmp)
 
-<a class="Pages" target="_blank" href="assets/syllabus.pdf">syllabus</a>
+- <a class="Pages" target="_blank" href="assets/syllabus.pdf">syllabus</a>
 
 - 中午的时候, 老师会放出上午课的录音, 可以预先听一下, 可以设法结合语音
 - [TTSReader's Text to Speech Player](https://ttsreader.com/player/) 听文本, 跟读, 看看是否需要录音反馈, 还是需要反馈, 找出自己不熟练的部分进行重复练习
   - [Free Text to Speech Online with Realistic AI Voices](https://www.naturalreaders.com/online/)
   - [Read Aloud: 文本语音朗读助理 - Chrome 应用商店](https://chrome.google.com/webstore/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp)
+  - 采用 chrome 的实时字幕学习
 
 注意学习的时候, 后面会下降. 适当调整, 分配合理的时间, 适当改动学习的方式
 

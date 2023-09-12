@@ -1,10 +1,14 @@
 # 机器人机构学
 
+- <a class="Pages" target="_blank" href="assets/syllabus.pdf">syllabus</a>
+
 Institutional Science
 
 钢铁侠 -> 外骨骼
 变形金刚 -> 拓扑的重构
 机器人的三大法则
+
+推荐 Kinematic Geometry of Mechanisms (Hunt Kenneth Henderson)
 
 ## 发展史
 
