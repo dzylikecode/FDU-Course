@@ -9,3 +9,5 @@ matlab 手机版, 云盘, 可以收集数据, 有丰富的传感器, 且方便
 2. Hadamard 乘积: [Hadamard product (matrices) - Wikipedia](https://en.wikipedia.org/wiki/Hadamard_product_%28matrices%29)
 
 3. Kronecker 乘积: [Kronecker product - Wikipedia](https://en.wikipedia.org/wiki/Kronecker_product)
+
+可以使用 math type 导出 tex
