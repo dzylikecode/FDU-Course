@@ -6,7 +6,7 @@
 
 [github/github-elements: GitHub's Web Component collection.](https://github.com/github/github-elements)
 
-[github/details-dialog-element: A modal dialog that's opened with <details>.](https://github.com/github/details-dialog-element)
+[github/details-dialog-element: A modal dialog that's opened with `<details>`](https://github.com/github/details-dialog-element)
 
 [docsify-mermaid-zoom/svg.js at main · corentinleberre/docsify-mermaid-zoom · GitHub](https://github.com/corentinleberre/docsify-mermaid-zoom/blob/main/src/plugin/svg.js)
 
