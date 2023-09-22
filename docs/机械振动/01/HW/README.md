@@ -2,6 +2,8 @@
 
 - <a class="Pages" target="_blank" href="2023-HW1.pdf">question</a>
 
+## problem 01
+
 $$
 \begin{aligned}
 x_h &= e^{-\xi \omega_n t} ( \alpha e^{i \omega_d t} + \beta e^{-i \omega_d t} ) \\
@@ -23,6 +25,18 @@ r^2 +p\,r+q=0 \quad &(1) \\
 \end{cases}
 $$
 
-![HW-1.drawio.svg](HW-1.drawio.svg)
+![](HW-01-01.drawio.svg)
 
-- <a class="Pages" target="_blank" href="HW-1.drawio.svg">svg version</a>
+- <a class="Pages" target="_blank" href="HW-01-01.drawio.svg">svg version</a>
+
+## problem 02
+
+![](HW-01-02.drawio.svg)
+
+## problem 03
+
+![](HW-01-03.drawio.svg)
+
+## problem 04
+
+![](HW-01-04.drawio.svg)

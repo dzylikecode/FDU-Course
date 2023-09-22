@@ -1,2 +1,11 @@
 temp
 *.bkp
+.$*
+*.pdf
+*.doc
+*.docx
+*.zip
+*.7z
+*.tar.gz
+# 存放到网盘
+*-pan
