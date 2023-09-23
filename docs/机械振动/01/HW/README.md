@@ -1,7 +1,5 @@
 # HW-1
 
-- <a class="Pages" target="_blank" href="2023-HW1.pdf">question</a>
-
 ## problem 01
 
 $$
