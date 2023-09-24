@@ -9,3 +9,4 @@ temp
 *.tar.gz
 # 存放到网盘
 *-pan
+*.mlx
