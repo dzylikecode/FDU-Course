@@ -97,3 +97,40 @@ end
 ```
 
 - [Solve nonstiff differential equations — medium order method - MATLAB ode45](https://www.mathworks.com/help/matlab/ref/ode45.html#bu00_4l_sep_shared-y0)
+
+## problem 08
+
+![](HW-01-08.drawio.svg)
+
+## problem 09
+
+![](HW-01-09.drawio.svg)
+
+## issue
+
+我定义了一个符号函数, 然后想计算矩阵, 如下, 如何修复代码
+
+```matlab
+syms t
+
+f = sin(t)
+
+test_t = [1, 2, 3];
+f(test_T)
+
+```
+
+---
+
+GitHub Copilot: 在这段代码中，变量 `test_t` 的大小为 `1x3`，而符号函数 `f` 的输入参数应该是一个标量。因此，我们需要对 `test_t` 中的每个元素分别计算符号函数的值。可以使用 `arrayfun` 函数来实现这个功能。以下是修复后的代码：
+
+```matlab
+syms t
+
+f = sin(t);
+
+test_t = [1, 2, 3];
+f_test_t = arrayfun(@(x) double(subs(f, t, x)), test_t);
+```
+
+在这个修复后的代码中，我们使用 `arrayfun` 函数对 `test_t` 中的每个元素应用一个匿名函数，该匿名函数使用 `subs` 函数将符号函数 `f` 中的 `t` 替换为当前元素，并使用 `double` 函数将结果转换为双精度数。最后，我们将结果存储在 `f_test_t` 中。运行这段代码可以得到 `f_test_t` 数组，它的值为 `[0.8415, 0.9093, 0.1411]`。
