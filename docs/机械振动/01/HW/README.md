@@ -106,6 +106,10 @@ end
 
 ![](HW-01-09.drawio.svg)
 
+## problem 10
+
+![](HW-01-10.drawio.svg)
+
 ## issue
 
 我定义了一个符号函数, 然后想计算矩阵, 如下, 如何修复代码
