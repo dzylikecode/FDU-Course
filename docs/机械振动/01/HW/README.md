@@ -43,13 +43,15 @@ $$
 
 ![](HW-01-05.drawio.svg)
 
+[](code/ques_01_05.m ":include :type=code matlab")
+
+| Amplitude                            | Phase                            |
+| ------------------------------------ | -------------------------------- |
+| ![](figure/ques_01_05_Amplitude.png) | ![](figure/ques_01_05_Phase.png) |
+
 - [Solve Differential Equation - MATLAB & Simulink](https://www.mathworks.com/help/symbolic/solve-a-single-differential-equation.html): key function is `dsolve`
 - [Solve a System of Differential Equations - MATLAB & Simulink](https://www.mathworks.com/help/symbolic/solve-a-system-of-differential-equations.html): use [eq1; eq2] to represent a system of equations
 - [Equations and systems solver - MATLAB solve](https://www.mathworks.com/help/symbolic/sym.solve.html): key function is `solve`, but it can't solve differential equation
-
-> 如何替换 res 中的通解系数
-
-Using Mathematica/MATLAB, please derive the steady-state response (i.e., the particular solution) of the following SDOF system $$m\ddot{x}+c\dot{x}+kx=F_0\sin(\omega_f t)$$. Based on the response, please plot the amplitude-frequency response curve (use the ratio of frequency) of the system.
 
 ```matlab
 clear; clc;
@@ -106,11 +108,17 @@ end
 
 ![](HW-01-09.drawio.svg)
 
+[](code/ques_01_09.m ":include :type=code matlab")
+
+![](figure/ques_01_09_ode_vs_precise.png)
+
 ## problem 10
 
 ![](HW-01-10.drawio.svg)
 
 ## issue
+
+### 符号函数代入矩阵
 
 我定义了一个符号函数, 然后想计算矩阵, 如下, 如何修复代码
 
@@ -138,3 +146,7 @@ f_test_t = arrayfun(@(x) double(subs(f, t, x)), test_t);
 ```
 
 在这个修复后的代码中，我们使用 `arrayfun` 函数对 `test_t` 中的每个元素应用一个匿名函数，该匿名函数使用 `subs` 函数将符号函数 `f` 中的 `t` 替换为当前元素，并使用 `double` 函数将结果转换为双精度数。最后，我们将结果存储在 `f_test_t` 中。运行这段代码可以得到 `f_test_t` 数组，它的值为 `[0.8415, 0.9093, 0.1411]`。
+
+### matlab 解二阶方程
+
+通过例子 5 发现 matlab 解完后难以回代, 无法化简
