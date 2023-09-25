@@ -3,6 +3,8 @@ syms t T n
 omega = 2*pi/T;
 Bn = 2/T*int(t*sin(n*omega*t), t, -T/2, T/2);
 Bn = simplify(Bn)
+assume(n, 'integer');
+Bn = simplify(Bn)
 subs(Bn, T, 4)
 clear; clc;
 T = 4;
