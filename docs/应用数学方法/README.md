@@ -1,6 +1,6 @@
 # 应用数学方法
 
-考核: 期中 30%, 期末 70% (可以改交论文, 但是至多 C)
+考核: 期中 30%, 期末 70% (可以改交论文, 但是至多 B)
 
 应用数学仍是理论, 只不过问题有背景
 
@@ -22,3 +22,7 @@ flowchart LR
 ```
 
 - 可以添加一些 matlab 代码
+
+## References
+
+- [rios - 知乎](https://www.zhihu.com/people/swstbe-54/posts) 上课笔记
