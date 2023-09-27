@@ -25,9 +25,7 @@ title('Solution of $m \ddot x + c \dot x + k x = f(t)$ with ODE45', 'Interpreter
 xlabel('$t$', 'Interpreter','Latex');
 ylabel('reponse', 'Interpreter','Latex');
 legend('$x$', 'Interpreter','Latex');
-%% 
-% 
-
+%%
 function dydt = vdp1(t, x, f, m, c, k)
   dydt = [
       x(2); 
