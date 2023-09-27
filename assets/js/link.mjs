@@ -32,6 +32,7 @@ function modifyReposLink() {
   links.forEach((link) => {
     link = proxyLink(link);
     const url = link.src;
+    if (isRemote(url)) return;
     if (isRelative(url)) {
       link.src = blobFileDir + url;
     } else {
@@ -44,6 +45,7 @@ function modifyPagesLink() {
   links.forEach((link) => {
     link = proxyLink(link);
     const url = link.src;
+    if (isRemote(url)) return;
     if (isRelative(url)) {
       link.src = pageFileDir + url;
     } else {
@@ -56,7 +58,7 @@ function modifyPagesLink() {
 }
 
 function proxyLink(link) {
-  const attr = link.attributes.href ? "href" : "src";
+  const attr = getAttributeKeyOf(link);
   return {
     link,
     get src() {
@@ -66,10 +68,25 @@ function proxyLink(link) {
       link[attr] = value;
     },
   };
+  function getAttributeKeyOf(link) {
+    if (link.attributes.href) {
+      return "href";
+    } else if (link.attributes.src) {
+      return "src";
+    } else if (link.attributes.data) {
+      return "data";
+    } else {
+      throw new Error("Link has no href or src attribute");
+    }
+  }
+}
+
+function isRemote(url) {
+  return url.includes(":");
 }
 
 function isRelative(url) {
-  const absPath = url[0] == "/" || url.includes(":");
+  const absPath = url[0] == "/";
   return !absPath;
 }
 

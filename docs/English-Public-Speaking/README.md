@@ -1,6 +1,6 @@
 # English Speak
 
-微信公众号:
+微信公众号: | Archimedes English Classroom
 
 ![](assets/qrcode.bmp)
 
