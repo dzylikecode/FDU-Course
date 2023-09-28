@@ -3,7 +3,7 @@
 工研院
 
 $$
-\frac {\mathrm{d} \, life} {\mathrm{d} \, t} =
+\frac {\mathrm{d} life} {\mathrm{d} t} =
 \begin{cases}
 📕\text{(study)} &\quad \text{if your boss observes you}  \\
 🐟\text{(slack off)} &\quad \text{if your lover observes you}
