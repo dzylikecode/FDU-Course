@@ -40,3 +40,6 @@
 
 - [Fourier 级数与 Parseval 恒等式 - 知乎](https://zhuanlan.zhihu.com/p/118249951)
 - [Parseval's theorem - Wikipedia](https://en.wikipedia.org/wiki/Parseval%27s_theorem)
+- [傅立叶系列(1): 理解傅立叶级数 - 知乎](https://zhuanlan.zhihu.com/p/350616936)
+- [傅立叶系列(2): 傅立叶级数的复数形式 - 知乎](https://zhuanlan.zhihu.com/p/401147318)
+- [能量信号和功率信号的分别 - 知乎](https://zhuanlan.zhihu.com/p/35363670)
