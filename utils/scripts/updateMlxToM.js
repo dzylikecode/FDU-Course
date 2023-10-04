@@ -1,21 +1,28 @@
-/**
- * git clone the from repo:https://github.com/dzylikecode/matlab-file-converter
- */
 const path = require("path");
-const exec = require("child_process").exec;
+const { ConvertMlx } = require("./lib/matlabConvert");
+const fs = require("fs");
 
-const workscripts = "D:\\code\\matlab-file-converter\\Convert.js";
+const rootDir = path.resolve(__dirname, "../..");
 
-const curDir = path.resolve(__dirname, "../..");
+console.log("root directory:", rootDir);
 
-console.log("curDir", curDir);
+const mlxFiles = findFiles(rootDir, ".mlx");
+// console.log("mlxFiles", mlxFiles);
+ConvertMlx(mlxFiles);
 
-const codeDir = path.resolve(curDir, "docs\\机械振动\\01\\HW\\code\\*.mlx");
+function findFiles(dir, extension, fileList = []) {
+  const files = fs.readdirSync(dir);
 
-exec(`node ${workscripts} ${codeDir}`, (err, stdout, stderr) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(stdout);
-  }
-});
+  files.forEach((file) => {
+    const filePath = path.join(dir, file);
+    const fileStat = fs.statSync(filePath);
+
+    if (fileStat.isDirectory()) {
+      findFiles(filePath, extension, fileList);
+    } else if (path.extname(file) === extension) {
+      fileList.push(filePath);
+    }
+  });
+
+  return fileList;
+}

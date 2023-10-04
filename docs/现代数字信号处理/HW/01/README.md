@@ -24,6 +24,8 @@
 
 ![](HW-01-06.drawio.svg)
 
+[](code/ques_01_06.m ":include :type=code matlab")
+
 ![](figure/ques_01_06_Amplitude.png)
 
 ![](figure/ques_01_06_Phase.png)
@@ -31,6 +33,8 @@
 ## problem 07
 
 ![](HW-01-07.drawio.svg)
+
+[](code/ques_01_07.m ":include :type=code matlab")
 
 ### References
 
