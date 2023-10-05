@@ -37,6 +37,14 @@ git repository 存放个人自己所做的, 而 pdf 等之类的就 ignore, 最�
 - [如何复制知乎文章中的公式 - 清北博客](https://blog.tsinbei.com/archives/1152/#mjx-eqn-eq)
 - [MathType demo - For Developers](https://demo.wiris.com/mathtype/en/developers.php?_ga=2.154018814.778037287.1696334679-1067626557.1696334679)
 - 学会使用 mathtype 提高公式编辑速度
+- matlab 自动保存图像
+
+  ```matlab
+  [~, filename, ~] = fileparts(matlab.desktop.editor.getActiveFilename);
+  saveas(gcf, sprintf('../figure/%s_%s.png', filename, imgName));
+  ```
+
+- 自动生成作业模板
 
 ## References
 
