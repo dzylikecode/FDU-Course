@@ -44,6 +44,15 @@
 
 [](code/ques_01_05.m ":include :type=code matlab")
 
+### issue
+
+- curve_arrow 函数超出范围后会出错
+
+### improve
+
+- 可以用对数坐标查看更广的范围
+- 对于循环迭代, 可以使用 alpha 通道叠加图片, 将很久之前的轨迹逐渐淡出, 就像有一定记忆性一样
+
 ## problem 06
 
 ![](HW-01-06.drawio.svg)
