@@ -46,6 +46,20 @@ git repository 存放个人自己所做的, 而 pdf 等之类的就 ignore, 最�
 
 - 自动生成作业模板
 
+## 思考
+
+```matlab
+labels = [
+    draw(@(x) x, 'k');
+    draw(f_curry(2), 'b');
+    draw(f_curry(1/4), 'r');
+    draw(f_curry(0), 'c');
+    draw(f_curry(-3), 'g');
+    ];
+```
+
+有点意思, 一行一行的语句, 可以看作是列向量, 仅仅是形式上而已, 用的不过是返回值
+
 ## References
 
 - [npubird/KnowledgeGraphCourse: 东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)
