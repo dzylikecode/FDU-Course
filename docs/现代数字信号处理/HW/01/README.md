@@ -43,3 +43,4 @@
 - [傅立叶系列(1): 理解傅立叶级数 - 知乎](https://zhuanlan.zhihu.com/p/350616936)
 - [傅立叶系列(2): 傅立叶级数的复数形式 - 知乎](https://zhuanlan.zhihu.com/p/401147318)
 - [能量信号和功率信号的分别 - 知乎](https://zhuanlan.zhihu.com/p/35363670)
+- [利用 MATLAB 实现图片切换动画效果详解 - 知乎](https://zhuanlan.zhihu.com/p/570296625)
