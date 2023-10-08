@@ -65,3 +65,7 @@
 
 - [Animation Playback Controls in Live Scripts (R2021a) » File Exchange Pick of the Week - MATLAB & Simulink](https://blogs.mathworks.com/pick/2021/03/26/animation-playback-controls-in-live-scripts-r2021a/#respond), 但是我的程序在实时脚本里面不会显示动画, 在 m 文件中才可以正常显示
 - [Displaying GIF Image Matlab - MATLAB Answers - MATLAB Central](https://www.mathworks.com/matlabcentral/answers/36160-displaying-gif-image-matlab) 在 mlx 显示保存的 gif 图片
+
+## fix
+
+双曲和吸引与排斥不是包含关系, 所以下结论需要判定是双曲吸引子还是非双曲吸引子
