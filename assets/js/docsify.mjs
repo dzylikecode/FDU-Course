@@ -7,6 +7,7 @@ import "./markmap.mjs";
 import "./anchor.mjs";
 import "./references/index.mjs";
 import "./link.mjs";
+import "./image.mjs";
 import "./marked-highligh-text.mjs";
 import style from "./style.css" assert { type: "css" };
 import { marked } from "./marked.mjs";

@@ -217,9 +217,10 @@
 
 /* summary */
 .mermaid-summary {
-  position: absolute;
-  top: 1em;
-  right: 1em;
+  position: relative;
+  z-index: 2;
+  left: 90%;
+  top: auto;
 }
 
 .mermaid-overlay {

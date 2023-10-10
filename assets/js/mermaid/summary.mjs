@@ -53,16 +53,10 @@ export function BtnSummary(elem) {
   const $summary = document.createElement("button");
   $summary.classList.add("btn", "mermaid-summary");
   $summary.innerHTML = summarySvg.trim();
-  let mermaidSvg = null;
   $summary.addEventListener("click", async () => {
     overlay.classList.add("is-active");
     detials.classList.add("visible");
-    if (!mermaidSvg)
-      mermaidSvg = await mermaidRender(
-        "mermaid-svg-details",
-        elem.dataset.content
-      );
-    $pre.innerHTML = mermaidSvg;
+    $pre.innerHTML = elem.dataset.content;
     const svg = $pre.querySelector("svg");
     const panzoom = Panzoom(svg, {
       startScale: startScale,

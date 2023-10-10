@@ -24,6 +24,7 @@ function plugin(hook, vm) {
   hook.doneEach(function () {
     modifyReposLink();
     modifyPagesLink();
+    // modifyDrawioSvg();
   });
 }
 
@@ -56,6 +57,29 @@ function modifyPagesLink() {
     }
   });
 }
+
+// function modifyDrawioSvg() {
+//   const links = document.querySelectorAll("img");
+//   links.forEach((link) => {
+//     if (!link.src.endsWith(".drawio.svg")) return;
+
+//     link.addEventListener("dblclick", async (evt) => {
+//       // remove click event
+//       evt.stopPropagation();
+//       const wnd = window.open(
+//         "https://viewer.diagrams.net/?client=1&page=0&edit=_blank"
+//       );
+//       const data = await fetch(link.src);
+//       const text = await data.text();
+//       const parser = new DOMParser();
+//       const svg = parser.parseFromString(text, "image/svg+xml");
+//       wnd.postMessage(
+//         decodeURIComponent(svg.documentElement.getAttribute("content")),
+//         "*"
+//       );
+//     });
+//   });
+// }
 
 function proxyLink(link) {
   const attr = getAttributeKeyOf(link);

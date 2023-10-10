@@ -12,23 +12,24 @@ export function plugin(hook, vm) {
   hook.doneEach(function () {
     const allMermaid = document.querySelectorAll("pre.mermaid");
     allMermaid.forEach(async (elem) => {
-      const mermaidObserver = new MutationObserver((mutations, observer) => {
-        const mutation = mutations.find(
-          (mutation) => mutation.addedNodes.length > 0
-        );
-        if (!mutation) return;
-        const target = mutation.target;
-        const svg = target.querySelector("svg");
-        if (!svg) return;
-        zoom(target, svg);
-        observer.disconnect();
-      });
-      mermaidObserver.observe(elem, {
-        childList: true,
-      });
+      // const mermaidObserver = new MutationObserver((mutations, observer) => {
+      //   const mutation = mutations.find(
+      //     (mutation) => mutation.addedNodes.length > 0
+      //   );
+      //   if (!mutation) return;
+      //   const target = mutation.target;
+      //   const svg = target.querySelector("svg");
+      //   if (!svg) return;
+      //   zoom(target);
+      //   observer.disconnect();
+      // });
+      // mermaidObserver.observe(elem, {
+      //   childList: true,
+      // });
       const code = elem.innerText;
       elem.innerHTML = await mermaidRender("mermaid-svg-" + num++, code);
-      elem.dataset.content = code;
+      elem.dataset.content = elem.innerHTML;
+      zoom(elem);
     });
   });
 }

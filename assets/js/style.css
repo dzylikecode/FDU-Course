@@ -6,6 +6,6 @@ iframe {
 }
 
 /* keep origin style, don't inhert */
-embed {
-  all: initial;
+svg {
+  all: revert;
 }
