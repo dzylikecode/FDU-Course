@@ -31,7 +31,7 @@ function install(hook) {
       zoom.detach();
     }
 
-    zoom = mediumZoom(normalImages);
+    zoom = mediumZoom(elms);
 
     drawioImages.forEach(async (elm) => {
       const src = elm.getAttribute("src");

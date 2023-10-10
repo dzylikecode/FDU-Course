@@ -23,6 +23,12 @@ flowchart LR
 
 - 可以添加一些 matlab 代码
 
+- 捕食
+- 共生
+- 竞争
+
+改变符号, 二者互相影响
+
 ## References
 
 - [rios - 知乎](https://www.zhihu.com/people/swstbe-54/posts) 上课笔记

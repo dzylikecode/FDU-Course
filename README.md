@@ -60,6 +60,25 @@ labels = [
 
 有点意思, 一行一行的语句, 可以看作是列向量, 仅仅是形式上而已, 用的不过是返回值
 
+---
+
+艺术性, 左边是主逻辑, 右边是 observe
+
+```matlab
+function X = FFT_prime(xs)
+theta = reArrange(xs);                          ; theta = sym(theta)
+while getCols(theta) ~= 1
+                                                ; disp('---------' + string(getRows(theta)));
+    [alpha, beta] = partition(theta);           ; alpha, beta
+    rotateM = rotateMatrix(getRows(theta));     ; W = sym(rotateM)
+    phi_1 = alpha + rotateM*beta;
+    phi_2 = alpha - rotateM*beta;
+    theta = [phi_1; phi_2];                     ; simplify(theta)
+end
+X = theta;
+end
+```
+
 ## References
 
 - [npubird/KnowledgeGraphCourse: 东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)
