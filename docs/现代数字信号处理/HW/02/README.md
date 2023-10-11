@@ -16,6 +16,8 @@
 
 ![](HW-02-04.drawio.svg)
 
+[ques_02_04.m](code/ques_02_04.m ":include :type=code matlab")
+
 ## problem 05
 
 ![](HW-02-05.drawio.svg)
