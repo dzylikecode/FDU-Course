@@ -15,3 +15,5 @@ matlab 手机版, 云盘, 可以收集数据, 有丰富的传感器, 且方便
 作业布置在[e-learning](https://elearning.fudan.edu.cn/dash)上面
 
 [能量信号和功率信号的分别 - 知乎](https://zhuanlan.zhihu.com/p/35363670)
+
+hibert 提取频率会造成抖动

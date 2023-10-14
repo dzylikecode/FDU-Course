@@ -1,6 +1,8 @@
 x = [3, -1, 0, 5, 9, 0, -3, 2];
 y = reArrange(x);
 disp(strjoin(string(y), ', '));
+reArrange(0:2^4-1)
+reArrange(0:2^3-1)
 FFT_prime(x);
 res = FFT_prime([1 0 0 -1 0 0 -1 1]);
 double(res)
@@ -11,12 +13,13 @@ theta = reArrange(xs);                          ; theta = sym(theta)
 while getCols(theta) ~= 1
                                                 ; disp('---------' + string(getRows(theta)));
     [alpha, beta] = partition(theta);           ; a = observe(alpha), b = observe(beta)
-    rotateM = rotateMatrix(getRows(theta));     ; W = observe(rotateM)
-    phi_1 = alpha + rotateM*beta;               ; phi1 = observe(phi_1)
-    phi_2 = alpha - rotateM*beta;               ; phi2 = observe(phi_2)
+    rotateM = rotateMatrix(getRows(beta));      ; W = observe(rotateM)
+    betaPart = rotateM*beta;                    % the core of the algorithm
+    phi_1 = alpha + betaPart;                   ; phi1 = observe(phi_1)
+    phi_2 = alpha - betaPart;                   ; phi2 = observe(phi_2)
     theta = [phi_1; phi_2];                     ; o = observe(theta)
 end
-X = theta;
+X = theta.';
 end
     
 function ys = reArrange(xs)
@@ -54,6 +57,7 @@ W_n = exp(sym(-1i * 2*pi / n));
 dig_W = arrayfun(@(i) W_n^i, 0:dims-1);
 m = diag(dig_W);
 end
+
 
 function v = observe(var)
 v = var;
