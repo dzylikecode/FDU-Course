@@ -1,3 +1,5 @@
+- [04](/docs/现代数字信号处理/04/README.md)
+
 Homework
 
 - [01](/docs/现代数字信号处理/HW/01/README.md)

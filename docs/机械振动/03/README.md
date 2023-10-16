@@ -8,3 +8,5 @@
 
 - [悬链线问题 - 知乎](https://zhuanlan.zhihu.com/p/420456448)
 - [如何理解最小作用量原理？ - 知乎](https://www.zhihu.com/question/26435474/answer/2293677749?utm_campaign=&utm_medium=social&utm_oi=1136601411998605312&utm_psn=1690478675731124224&utm_source=zhihu)
+- [从最短光程原理到折射定律 - 知乎](https://zhuanlan.zhihu.com/p/260828265)
+- [条件极值与拉格朗日乘数法 - 知乎](https://zhuanlan.zhihu.com/p/296445326)
