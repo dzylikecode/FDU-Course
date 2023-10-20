@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #input {
+        width: 100%;
+      }
+      #output {
+        width: 100%;
+        border: 1px solid black;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      #format {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="input" rows="10" cols="50"></textarea>
+    <div id="output"></div>
+    <button id="format">Format</button>
+    <script src="./formatTex.js"></script>
+    <script>
+      const input = document.getElementById("input");
+      const text = input.value;
+      const output = document.getElementById("output");
+      const format = document.getElementById("format");
+      format.addEventListener("click", () => {
+        output.innerText = formatTex(input.value);
+        // write to clipboard
+        navigator.clipboard.writeText(output.innerText);
+      });
+    </script>
+  </body>
+</html>

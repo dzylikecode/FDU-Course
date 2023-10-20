@@ -12,12 +12,6 @@
     "aspect": "fixed"
   },
   {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=none;html=1;sketch=1;curveFitting=1;jiggle=2;rounded=0;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"660\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 660,
-    "h": 1,
-    "aspect": "fixed"
-  },
-  {
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"Text\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"50\" height=\"30\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 50,
     "h": 30,
@@ -27,24 +21,6 @@
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=none;html=1;rounded=0;strokeWidth=2;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint y=\"380\" as=\"sourcePoint\"/&gt;&lt;mxPoint as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 1,
     "h": 380,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"&amp;lt;font style=&amp;quot;font-size: 16px&amp;quot; color=&amp;quot;#cc0000&amp;quot; face=&amp;quot;Architects Daughter&amp;quot; data-font-src=&amp;quot;https://fonts.googleapis.com/css?family=Architects+Daughter&amp;quot;&amp;gt;$$P^{-1}AP=&amp;lt;br&amp;gt;\\varLambda$$&amp;lt;/font&amp;gt;\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;sketch=1;hachureGap=4;fontFamily=Tahoma;fontSize=16;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"118\" height=\"46\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 118,
-    "h": 46,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"$$V_{11}=&amp;lt;br&amp;gt;V_{12}$$\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#36393d;fillColor=#ffff88;sketch=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"74\" height=\"42\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 74,
-    "h": 42,
-    "aspect": "fixed"
-  },
-  {
-    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"$$\\lambda_1=2\\\\&amp;lt;br&amp;gt;\\lambda_2=-3$$\" style=\"text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d6b656;fillColor=#fff2cc;sketch=1;hachureGap=4;fillStyle=solid;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=16;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"130\" height=\"42\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
-    "w": 130,
-    "h": 42,
     "aspect": "fixed"
   },
   {
@@ -75,6 +51,36 @@
     "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillStyle=solid;fillColor=#f20707;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"20\" height=\"20\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
     "w": 20,
     "h": 20,
+    "aspect": "fixed"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=none;html=1;rounded=0;strokeWidth=3;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"660\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 660,
+    "h": 1,
+    "aspect": "fixed"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;strokeWidth=3;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"60\" as=\"sourcePoint\"/&gt;&lt;mxPoint as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 60,
+    "h": 1,
+    "aspect": "fixed"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.arc;startAngle=0.7531826745504864;endAngle=0.3444981944161846;rotation=90;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"60\" height=\"60\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=mxgraph.arrows2.wedgeArrow;html=1;bendable=0;startWidth=4.423076923076923;fillColor=strokeColor;defaultFillColor=invert;defaultGradientColor=invert;rounded=0;exitX=0;exitY=0.448;exitDx=0;exitDy=0;exitPerimeter=0;\" edge=\"1\" source=\"2\" parent=\"1\"&gt;&lt;mxGeometry width=\"100\" height=\"100\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"20\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"10\" as=\"targetPoint\"/&gt;&lt;Array as=\"points\"&gt;&lt;mxPoint x=\"34.81999999999999\" y=\"0.35999999999989996\"/&gt;&lt;/Array&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 60,
+    "h": 60,
+    "aspect": "fixed"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.arc;startAngle=0.5063628056739959;endAngle=0.20822828915671598;rotation=90;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"60\" height=\"60\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"\" style=\"shape=mxgraph.arrows2.wedgeArrow;html=1;bendable=0;startWidth=4.423076923076923;fillColor=strokeColor;defaultFillColor=invert;defaultGradientColor=invert;rounded=0;exitX=1;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;\" edge=\"1\" source=\"2\" parent=\"1\"&gt;&lt;mxGeometry width=\"100\" height=\"100\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"-63.51999999999998\" y=\"50\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"20\" y=\"60\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"4\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;strokeWidth=3;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"30\" y=\"20\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"140\" y=\"20\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"5\" value=\"\" style=\"endArrow=classic;html=1;rounded=0;strokeWidth=3;\" edge=\"1\" parent=\"1\"&gt;&lt;mxGeometry width=\"50\" height=\"50\" relative=\"1\" as=\"geometry\"&gt;&lt;mxPoint x=\"30\" y=\"20\" as=\"sourcePoint\"/&gt;&lt;mxPoint x=\"30\" y=\"130\" as=\"targetPoint\"/&gt;&lt;/mxGeometry&gt;&lt;/mxCell&gt;&lt;mxCell id=\"6\" value=\"&amp;lt;div data-content=&amp;quot;$x$&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;lt;mjx-container class=&amp;quot;MathJax&amp;quot; jax=&amp;quot;SVG&amp;quot;&amp;gt;&amp;lt;svg xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; width=&amp;quot;1.294ex&amp;quot; height=&amp;quot;1.025ex&amp;quot; role=&amp;quot;img&amp;quot; focusable=&amp;quot;false&amp;quot; viewBox=&amp;quot;0 -442 572 453&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; style=&amp;quot;vertical-align: -0.025ex;&amp;quot;&amp;gt;&amp;lt;defs&amp;gt;&amp;lt;path id=&amp;quot;MJX-984-TEX-I-1D465&amp;quot; d=&amp;quot;M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z&amp;quot;&amp;gt;&amp;lt;/path&amp;gt;&amp;lt;/defs&amp;gt;&amp;lt;g stroke=&amp;quot;currentColor&amp;quot; fill=&amp;quot;currentColor&amp;quot; stroke-width=&amp;quot;0&amp;quot; transform=&amp;quot;scale(1,-1)&amp;quot;&amp;gt;&amp;lt;g data-mml-node=&amp;quot;math&amp;quot;&amp;gt;&amp;lt;g data-mml-node=&amp;quot;mi&amp;quot;&amp;gt;&amp;lt;use data-c=&amp;quot;1D465&amp;quot; xlink:href=&amp;quot;#MJX-984-TEX-I-1D465&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/mjx-container&amp;gt;&amp;lt;/p&amp;gt;&amp;#10;&amp;lt;/div&amp;gt;\" style=\"pluginMarkdown=1;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"135\" width=\"30\" height=\"70\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"7\" value=\"&amp;lt;div data-content=&amp;quot;$y$&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;lt;mjx-container class=&amp;quot;MathJax&amp;quot; jax=&amp;quot;SVG&amp;quot;&amp;gt;&amp;lt;svg xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; width=&amp;quot;1.109ex&amp;quot; height=&amp;quot;1.464ex&amp;quot; role=&amp;quot;img&amp;quot; focusable=&amp;quot;false&amp;quot; viewBox=&amp;quot;0 -442 490 647&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; style=&amp;quot;vertical-align: -0.464ex;&amp;quot;&amp;gt;&amp;lt;defs&amp;gt;&amp;lt;path id=&amp;quot;MJX-986-TEX-I-1D466&amp;quot; d=&amp;quot;M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z&amp;quot;&amp;gt;&amp;lt;/path&amp;gt;&amp;lt;/defs&amp;gt;&amp;lt;g stroke=&amp;quot;currentColor&amp;quot; fill=&amp;quot;currentColor&amp;quot; stroke-width=&amp;quot;0&amp;quot; transform=&amp;quot;scale(1,-1)&amp;quot;&amp;gt;&amp;lt;g data-mml-node=&amp;quot;math&amp;quot;&amp;gt;&amp;lt;g data-mml-node=&amp;quot;mi&amp;quot;&amp;gt;&amp;lt;use data-c=&amp;quot;1D466&amp;quot; xlink:href=&amp;quot;#MJX-986-TEX-I-1D466&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/mjx-container&amp;gt;&amp;lt;/p&amp;gt;&amp;#10;&amp;lt;/div&amp;gt;\" style=\"pluginMarkdown=1;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"40\" y=\"90\" width=\"30\" height=\"70\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 165,
+    "h": 160,
+    "aspect": "fixed"
+  },
+  {
+    "xml": "&lt;mxGraphModel&gt;&lt;root&gt;&lt;mxCell id=\"0\"/&gt;&lt;mxCell id=\"1\" parent=\"0\"/&gt;&lt;mxCell id=\"2\" value=\"\" style=\"ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillStyle=solid;fillColor=#f20707;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry x=\"20\" width=\"20\" height=\"20\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;mxCell id=\"3\" value=\"&amp;lt;div data-content=&amp;quot;$O$&amp;quot;&amp;gt;&amp;lt;p&amp;gt;&amp;lt;mjx-container class=&amp;quot;MathJax&amp;quot; jax=&amp;quot;SVG&amp;quot;&amp;gt;&amp;lt;svg xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; width=&amp;quot;1.726ex&amp;quot; height=&amp;quot;1.643ex&amp;quot; role=&amp;quot;img&amp;quot; focusable=&amp;quot;false&amp;quot; viewBox=&amp;quot;0 -704 763 726&amp;quot; xmlns:xlink=&amp;quot;http://www.w3.org/1999/xlink&amp;quot; style=&amp;quot;vertical-align: -0.05ex;&amp;quot;&amp;gt;&amp;lt;defs&amp;gt;&amp;lt;path id=&amp;quot;MJX-1518-TEX-I-1D442&amp;quot; d=&amp;quot;M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z&amp;quot;&amp;gt;&amp;lt;/path&amp;gt;&amp;lt;/defs&amp;gt;&amp;lt;g stroke=&amp;quot;currentColor&amp;quot; fill=&amp;quot;currentColor&amp;quot; stroke-width=&amp;quot;0&amp;quot; transform=&amp;quot;scale(1,-1)&amp;quot;&amp;gt;&amp;lt;g data-mml-node=&amp;quot;math&amp;quot;&amp;gt;&amp;lt;g data-mml-node=&amp;quot;mi&amp;quot;&amp;gt;&amp;lt;use data-c=&amp;quot;1D442&amp;quot; xlink:href=&amp;quot;#MJX-1518-TEX-I-1D442&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/g&amp;gt;&amp;lt;/svg&amp;gt;&amp;lt;/mjx-container&amp;gt;&amp;lt;/p&amp;gt;&amp;#10;&amp;lt;/div&amp;gt;\" style=\"pluginMarkdown=1;text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#da0b0b;\" vertex=\"1\" parent=\"1\"&gt;&lt;mxGeometry y=\"5\" width=\"30\" height=\"70\" as=\"geometry\"/&gt;&lt;/mxCell&gt;&lt;/root&gt;&lt;/mxGraphModel&gt;",
+    "w": 40,
+    "h": 75,
     "aspect": "fixed"
   }
 ]</mxlibrary>

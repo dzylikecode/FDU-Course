@@ -36,3 +36,4 @@ Institutional Science
 - 串联: 刚度低, 承载能力差, 精度差, 操作反解模型复杂, 操作速度低
 - 并联: 工作空间受限, 速度快, 精度高, 承载能力强, 刚度高, 操作反解模型简单
 - 混联
+- [用螺旋理论分析 Sarrus 机构的自由度及其性质-CSDN 博客](https://blog.csdn.net/XiaoXuZaiZi/article/details/50774698)
