@@ -45,7 +45,9 @@ Lg = T + W
 
 Needs["VariationalMethods`"]
 EqEular = VariationalMethods`EulerEquations[Lg, {theta1, theta2}, t]
+$Assumptions = {L > 0};
 EqEular // Simplify
+
 
 
 
