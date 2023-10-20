@@ -4,9 +4,9 @@ disp(strjoin(string(y), ', '));
 reArrange(0:2^4-1)
 reArrange(0:2^3-1)
 FFT_prime(x);
-res = FFT_prime([1 0 0 -1 0 0 -1 1]);
-double(res)
-fft([1 0 0 -1 0 0 -1 1])
+test([1 0 0 -1 0 0 -1 1]);
+test([1 2])
+test([1 2 3 4])
 %%
 function X = FFT_prime(xs)
 theta = reArrange(xs);                          ; theta = sym(theta)
@@ -21,7 +21,35 @@ while getCols(theta) ~= 1
 end
 X = theta.';
 end
-    
+
+function X = FFT_prime_new(xs)
+theta = xs;                                     ; theta = sym(theta)
+while getCols(theta) ~= 1
+                                                ; disp('---------' + string(getRows(theta)));
+    [alpha, beta] = partition_new(theta);       ; a = observe(alpha), b = observe(beta)
+    rotateM = rotateMatrix(getRows(beta));      ; W = observe(rotateM)
+    betaPart = rotateM*beta;                    % the core of the algorithm
+    phi_1 = alpha + betaPart;                   ; phi1 = observe(phi_1)
+    phi_2 = alpha - betaPart;                   ; phi2 = observe(phi_2)
+    theta = [phi_1; phi_2];                     ; o = observe(theta)
+end
+X = theta.';
+end
+
+function [evenIdxElems, oddIdxElems] = partition_new(xs)
+evenIdxElems = xs(:,1:end/2);
+oddIdxElems = xs(:,end/2+1:end);
+end
+
+
+function test(xs)
+res1 = FFT_prime(xs);
+res2 = FFT_prime_new(xs);
+double(res1)
+fft(xs)
+double(res2)
+end
+
 function ys = reArrange(xs)
 N = length(xs);
 n = log2(N);
