@@ -40,14 +40,13 @@ eq2 // Simplify
 
 
 T = 1/2 J1 omega1^2 + 1/2 J2 omega2^2
-W = m1 g L/2 theta1 + m2 g L/4 theta2 + 1/2 k1 Dy1^2 + 1/2 k2 Dy2^2
+W = m1 g L/2 theta1 + m2 g L/4 theta2 - 1/2 k1 Dy1^2 - 1/2 k2 Dy2^2
 Lg = T + W
 
 Needs["VariationalMethods`"]
 EqEular = VariationalMethods`EulerEquations[Lg, {theta1, theta2}, t]
 $Assumptions = {L > 0};
 EqEular // Simplify
-
 
 
 
