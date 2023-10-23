@@ -5,3 +5,4 @@
   - [English Public Speaking](/docs/English-Public-Speaking/)
   - [机械振动](/docs/机械振动/)
   - [现代数字信号处理](/docs/现代数字信号处理/)
+- [issue](https://github.com/dzylikecode/FDU-Course/issues)
