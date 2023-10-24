@@ -37,3 +37,5 @@ Institutional Science
 - 并联: 工作空间受限, 速度快, 精度高, 承载能力强, 刚度高, 操作反解模型简单
 - 混联
 - [用螺旋理论分析 Sarrus 机构的自由度及其性质-CSDN 博客](https://blog.csdn.net/XiaoXuZaiZi/article/details/50774698)
+
+胚图, contracted graph
