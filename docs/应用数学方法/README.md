@@ -29,6 +29,8 @@ flowchart LR
 
 改变符号, 二者互相影响
 
+三生万物的重要推论 -> 孩子生三个, 共勉
+
 ## References
 
 - [rios - 知乎](https://www.zhihu.com/people/swstbe-54/posts) 上课笔记
