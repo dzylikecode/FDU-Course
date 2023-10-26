@@ -10,6 +10,8 @@
 
 ![](HW-03-02.drawio.svg)
 
+![](figure/ques_03_02_1.png)
+
 ## problem 03
 
 ![](HW-03-03.drawio.svg)

@@ -9,7 +9,6 @@ fs = 1000;
 H = 1/7 + 2/7 Cos[w/fs] + 2/7 Cos[(2 w)/fs] + 2/7 Cos[(3 w)/fs] 
 Hf = H /. {w -> 2 Pi f}
 Hfabs = Abs[Hf];
-SetName["1"]
 
 
 fig02 = Plot[Hfabs, {f, - (fs/2), fs/2}]
