@@ -3,7 +3,7 @@
 fileName = NotebookFileName[];
 curDir = NotebookDirectory[];
 SetDirectory[curDir];
-fileBaseName = FileBaseName[fileName]
+fileBaseName = FileBaseName[fileName];
 SetName[n_] := ToString[StringForm["../figure/``_``.png", fileBaseName, n]];
 
 w = \[Omega];
