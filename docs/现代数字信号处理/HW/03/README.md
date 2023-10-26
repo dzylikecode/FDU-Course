@@ -4,6 +4,8 @@
 
 ![](HW-03-01.drawio.svg)
 
+![](figure/ques_03_01_1.png)
+
 ## problem 02
 
 ![](HW-03-02.drawio.svg)
