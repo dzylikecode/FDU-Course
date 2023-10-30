@@ -62,6 +62,7 @@ export function BtnSummary(elem) {
       startScale: startScale,
       maxScale: Infinity,
       minScale: 0,
+      cursor: "default",
     });
     const menu = Menu(panzoom);
     $pre.appendChild(menu);
