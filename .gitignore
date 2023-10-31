@@ -13,3 +13,7 @@ temp
 convert.m
 *.asv
 *.mp4
+temp.*
+README.*
+!README.md
+2023-10-31-16-06-13.png
