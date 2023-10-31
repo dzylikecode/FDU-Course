@@ -62,11 +62,22 @@ export function BtnSummary(elem) {
       startScale: startScale,
       maxScale: Infinity,
       minScale: 0,
-      cursor: "default",
+      // cursor: "default",
+      // noBind: true,
     });
     const menu = Menu(panzoom);
     $pre.appendChild(menu);
     $pre.addEventListener("wheel", panzoom.zoomWithWheel);
+    //https://github.com/timmywil/panzoom#handledown
+    // svg.addEventListener("pointerdown", (event) => {
+    //   if (event.button === 2) {
+    //     panzoom.handleDown(event);
+    //     panzoom.setOptions({ cursor: "move" });
+    //     event.preventDefault();
+    //   }
+    // });
+    // document.addEventListener("pointermove", panzoom.handleMove);
+    // document.addEventListener("pointerup", panzoom.handleUp);
   });
 
   return $summary;

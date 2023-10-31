@@ -11,8 +11,9 @@ figure;
 for k = 1:size(x0s,2)
     x0 = x0s(:, k);
     xys = EulerIterate(func, h, x0, times);
-    plot(xys(1, :), xys(2, :));
+    fig = plot(xys(1, :), xys(2, :));
     hold on;
+    plotArrow(xys(1, :), xys(2, :), get(fig, 'Color'));
 end
 [~, filename, ~] = fileparts(matlab.desktop.editor.getActiveFilename);
 saveas(gcf, sprintf('../figure/%s_%s.png', filename, imgName));
@@ -37,4 +38,12 @@ for k = 0:3
     P3s(:,k+1) = [left + k; top - 3];
 end
 x0s = [P0s, P1s, P2s, P3s];
+end
+
+function plotArrow(xs, ys, color)
+    delta = 10;
+    scale = 0.8;
+    dx = (xs(delta + 1) - xs(1)) * scale;
+    dy = (ys(delta + 1) - ys(1)) * scale;
+    quiver(xs(1), ys(1), dx, dy, 0, 'MaxHeadSize', 10, 'color', color);
 end

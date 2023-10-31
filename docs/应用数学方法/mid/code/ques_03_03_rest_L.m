@@ -1,5 +1,5 @@
 clear; clc; close all;
-times = 100;
+times = 100000;
 f = @(r) @(x) x.*exp(r*(1-x));
 observe(f(2.1), 0.1, times, '1_1');
 observe(f(2.1), 0.8, times, '1_2');
@@ -11,6 +11,7 @@ observe(f(3.116), 0.1, times, '3_1');
 observe(f(3.116), 0.8, times, '3_2');
 observe(f(3.116), 1.1, times, '3_3');
 %%
+%%
 function ys = difference(func, x0, numIterates)
     ys = zeros(1, numIterates);
     ys(1) = func(x0);
@@ -21,23 +22,14 @@ end
 
 function observe(func, x0, times, imgName)
     ys = difference(func, x0, times);
-    ns = 0:1:times;
     ys = [x0 ys];
-    stem(ns, ys);
-    syms x;
-    f_latex = sprintf('$%s$', latex(simplify(func(x))));
-    infoTitle = sprintf('%s with $x_0=%0.2f$', f_latex, x0);
-    title(infoTitle, 'Interpreter','latex');
-    hold off;
-    [~, filename, ~] = fileparts(matlab.desktop.editor.getActiveFilename);
-    saveas(gcf, sprintf('../figure/%s_%s.png', filename, imgName));
     %% observe Lyapunov
     Ls = estimateL(func, ys)
 end
 
 function dotysprod = estimateL(func, ys)
 syms x;
-fp = diff(func(x), x);
+fp = diff(func, x);
 fp_mat = matlabFunction(fp);
 dotys = log(abs(fp_mat(ys)));
 dotysprod = intermediateSum(dotys);
