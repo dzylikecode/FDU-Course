@@ -342,3 +342,7 @@ Neural ODE
 物理规律嵌入到神经网络中
 
 $$\frac{dx}{dt} \leftrightarrow x_{k+1}=a x(t)$$
+
+## References
+
+- [应用数学方法 1 动力学模型和问题 - 知乎](https://zhuanlan.zhihu.com/p/654489812)

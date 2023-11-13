@@ -31,6 +31,10 @@ git repository 存放个人自己所做的, 而 pdf 等之类的就 ignore, 最�
 
 将这个步骤脚本化
 
+### 导出 pdf
+
+可以用[markdown preview enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced), 用 docsify 渲染后打印 pdf 太丑了
+
 ### code
 
 #### 自动保存图像
