@@ -189,7 +189,7 @@ $$
 此时没法使用 QP 求解, 采用梯度下降的算法
 
 $$
-\nabla_{g_{i}}f={{f({\rm T}+h{\rm g}_{i})-f({\rm T})}\over{h}}
+\nabla_{g_{i}}f={{f(\rm T+h\rm g_{i})-f(\rm T)}\over h}
 $$
 
 - $h$为无穷小量
