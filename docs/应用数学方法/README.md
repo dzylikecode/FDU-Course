@@ -31,6 +31,8 @@ flowchart LR
 
 三生万物的重要推论 -> 孩子生三个, 共勉
 
+速度是连续变化的
+
 ## References
 
 - [rios - 知乎](https://www.zhihu.com/people/swstbe-54/posts) 上课笔记

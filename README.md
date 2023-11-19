@@ -84,6 +84,14 @@ X = theta;
 end
 ```
 
+---
+
+优雅
+
+```wl
+{k1, k2, k3} = Map[Subscript[k, #1]&, {1, 2, 3}]
+```
+
 ## 思考
 
 ```matlab
