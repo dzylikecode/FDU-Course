@@ -17,4 +17,11 @@ Hs = (p - Subscript[p, 1])(p - Subscript[p, 2]) /. Subscript[p, 1] -> Exp[I 3/4 
 Hw = Hs /. p -> I w/(200 Pi)
 
 
-Hz = Hw /. w -> 2 * 1000 ((z - 1)/(z + 1)) 
+Hz = Hs /. p -> 2 * 1000 ((z - 1)/(z + 1)) / (200 Pi)
+Hn = Hz * (z+1)^2 // Simplify // Expand
+an = Coefficient[Hn, z, Exponent[Hn, z]]
+an // N
+Hn / an // N // Simplify
+
+
+
