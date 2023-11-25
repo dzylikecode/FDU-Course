@@ -41,3 +41,5 @@ Institutional Science
 胚图, contracted graph
 
 LESICS youtube
+
+- [旋量入门篇：从理论力学推导旋量公式 - 知乎](https://zhuanlan.zhihu.com/p/619132260)
