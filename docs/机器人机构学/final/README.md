@@ -1,5 +1,15 @@
 用梯度图
 
+- abcs
+  - ectopicType: 奇异类型
+  - cond: 条件数
+  - m: 抽取后的矩阵
+  - a, b, c: 三条支链
+- 支链子链数据结构
+  - alpha1, alpha2, alpha3: 三个弧度
+  - theta1, theta2, theta3: 三个角度
+  - pos: [p1, p2, p3, p4], p1 为第一个关节点, p2 为第二个关节点, p3 为第三个关节点, p4 为末端点
+
 仿真:
 
 - [Wolfram Videos: 采用 Wolfram 语言进行折纸机构运动学仿真](https://www.wolfram.com/broadcast/video.php?c=236&ob=date&o=DESC&disp=list&v=3717)
