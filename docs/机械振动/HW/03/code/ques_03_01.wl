@@ -58,7 +58,8 @@ eq = Det[A]
 
 
 lambdaSol = Solve[eq == 0, lambda]
-lambdaSol // N
+lambdaSolN = lambdaSol // N
+lambdaSimpleSolN = Map[#[[1, 2]]&, lambdaSolN]
 omega = \[Omega]
 
 
@@ -68,6 +69,23 @@ omegaSol // N
 
 uSol = Map[{u -> NullSpace[K - #[[1, 2]] M]}&, lambdaSol]
 Map[{u -> (#[[1, 2]] // N // MatrixForm)}&, uSol]
+
+
+uSimpleSol = Map[(#[[1, 2, 1]] // N // Normalize)&, uSol]
+
+Draw[d_, t_] := ListPlot[d, Joined -> True, PlotLabel -> t];
+ToPoints[d_] := Table[{i, (d[[i]])}, {i, 1, Length[d]}];
+title[i_] := ToExpression[ToString[StringForm["u_``=``\\sqrt{\\frac{g}{L}}", i, lambdaSimpleSolN[[i]]]], TeXForm];
+
+figs = MapIndexed[(Draw[ToPoints[#1], title[First[#2]]])&, uSimpleSol]
+
+fileName = NotebookFileName[];
+curDir = NotebookDirectory[];
+SetDirectory[curDir];
+fileBaseName = FileBaseName[fileName];
+SetName[n_] := ToString[StringForm["../figure/``_``.png", fileBaseName, n]];
+
+MapIndexed[Export[SetName[First[#2]],#1]&, figs];
 
 
 
