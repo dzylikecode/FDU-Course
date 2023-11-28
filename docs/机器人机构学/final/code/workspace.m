@@ -139,6 +139,70 @@ observe(pi/3, pi/3, pi/6, 0:pi/20:pi, (0:pi/20:pi)+pi/2, 0:pi/20:pi, threshold);
 %%
 observe(pi/180*80, pi/180*10, pi/180*10, 0:pi/20:pi, 0:pi/20:pi, 0:pi/20:pi, threshold);
 %%
+observeWithImg(pi/180*80, pi/180*10, pi/180*10, 0:pi/20:pi, 0:pi/20:pi, 0:pi/20:pi, 1e-1, '80-10-10-180-180-180');
+%%
+observeWithImg(pi/180*60, pi/180*60, pi/180*30, 0:pi/20:pi, 0:pi/20:pi, 0:pi/20:pi, 1e-1, '60-60-30-180-180-180');
+%%
+observeWithImg(pi/180*60, pi/180*60, pi/180*30, 0:pi/20:pi, 0:pi/10:2*pi, 0:pi/10:2*pi, 1e-1, '60-60-30-180-360-360');
+%%
+observeWithImg(pi/180*90, pi/180*30, pi/180*30, 0:pi/20:pi, 0:pi/20:pi, 0:pi/20:pi, 1e-1, '90-30-30-180-180-180');
+%%
+function observeWithImg(alpha1, alpha2, alpha3, theta1, theta2, theta3, threshold, imgName)
+Trans = calcLinkTrans(alpha1, alpha2, alpha3, theta1, theta2, theta3);
+A = product(Trans, [1 0 0]');
+B = productP(rotz(pi/3*2), A);
+C = productP(rotz(pi/3*4), A);
+parts = intersection3({A, B, C}, threshold);
+
+figure;
+colors = ['ro'; 'go'; 'mo'; 'bo'; 'yo'; 'ko'; 'co'];
+for i=1:length(parts)
+    curSets = parts{i};
+    if length(curSets) == 0
+        continue;
+    end
+    plot3(curSets(1, :), curSets(2, :), curSets(3, :), colors(i, :)); 
+    hold on;
+end
+
+[~, filename, ~] = fileparts(matlab.desktop.editor.getActiveFilename);
+
+view([0 0]);
+saveas(gcf, sprintf('../figure/%s_%s_all_00.png', filename, imgName));
+
+view([45 45]);
+saveas(gcf, sprintf('../figure/%s_%s_all_45.png', filename, imgName));
+
+view([0 90]);
+saveas(gcf, sprintf('../figure/%s_%s_all_90.png', filename, imgName));
+
+hold off;
+
+figure;
+ABCpart = parts{7};
+ABCpartUp = [];
+for i=1:size(ABCpart, 2)
+    curPos = ABCpart(:, i);
+    if curPos(3) > 0
+        ABCpartUp = [ABCpartUp curPos];
+    end
+end
+figure;
+plot3(ABCpartUp(1, :), ABCpartUp(2, :), ABCpartUp(3, :), 'co');
+
+view([0 0]);
+saveas(gcf, sprintf('../figure/%s_%s_intersect_00.png', filename, imgName));
+
+view([45 45]);
+saveas(gcf, sprintf('../figure/%s_%s_intersect_45.png', filename, imgName));
+
+view([0 90]);
+saveas(gcf, sprintf('../figure/%s_%s_intersect_90.png', filename, imgName));
+
+
+save(sprintf('../cache/%s_%s.mat', filename, imgName), "ABCpartUp");
+end
+
 function observe(alpha1, alpha2, alpha3, theta1, theta2, theta3, threshold)
 Trans = calcLinkTrans(alpha1, alpha2, alpha3, theta1, theta2, theta3);
 A = product(Trans, [1 0 0]');

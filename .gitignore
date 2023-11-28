@@ -22,3 +22,4 @@ README.*
 github_repo
 *.autosave
 *.mat
+temp.*

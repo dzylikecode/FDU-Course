@@ -240,6 +240,7 @@ function observeCond(abcs)
     figure;
     stem(conds);
 end
+
 function newObj = updateWorkspace(obj)
     if obj.a.isEctopic || obj.b.isEctopic || obj.c.isEctopic
         obj.m           = zeros(5);
@@ -269,15 +270,16 @@ function res = IfElse(cond, t, f)
     end
 end
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 修改了选取的行
 function m = motionMatrix(a, b, c)
     m = [];
 
     m(1,:) = a(1, :);
     m(2,:) = b(1, :);
-    m(3,:) = a(3, :);
-    m(4,:) = b(3, :);
-    m(5,:) = c(3, :);
+    m(3,:) = a(4, :);
+    m(4,:) = b(4, :);
+    m(5,:) = c(4, :);
 end
 
 function newObj = updateLinkState(obj)
