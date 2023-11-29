@@ -7,6 +7,10 @@
 ![](assets/2023-11-28-16-04-24.png)
 ![](assets/2023-11-28-16-04-30.png)
 
+## pre
+
+Does it sound familiar to you? Yes, chatGPT. Segment Anything is inspired by the success of GPT and adopts the transformer architecture to image processing.
+
 ## title
 
 - "segment" refers to the process of image segmentation, which is the task of partitioning an image into multiple segments or regions, often to identify and isolate objects within the image.
