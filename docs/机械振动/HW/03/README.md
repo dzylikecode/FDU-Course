@@ -28,6 +28,9 @@
 
 ![](HW-03-04.drawio.svg)
 
+- [瑞利商的证明\_证明使得 aq-pq 达到最小的 p 为 a 的 rayleigh 商-CSDN 博客](https://blog.csdn.net/qq_35634966/article/details/121695814)
+- [【线性代数】瑞利商和广义瑞利商 - 知乎](https://zhuanlan.zhihu.com/p/432080955)
+
 ## problem 05
 
 ![](HW-03-05.drawio.svg)

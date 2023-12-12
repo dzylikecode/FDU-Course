@@ -106,6 +106,10 @@ labels = [
 
 有点意思, 一行一行的语句, 可以看作是列向量, 仅仅是形式上而已, 用的不过是返回值
 
+## 哲学
+
+- too long; don't read
+
 ## References
 
 - [npubird/KnowledgeGraphCourse: 东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)

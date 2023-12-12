@@ -190,3 +190,5 @@ Recall Impulse Response of a given input $F(t)$
 $$F \Delta t =\Delta (m v)$$
 
 when $\Delta t \rightarrow 0$, impact problem
+
+[finite element - In FEM, why is the stiffness matrix positive definite? - Computational Science Stack Exchange](https://scicomp.stackexchange.com/questions/21423/in-fem-why-is-the-stiffness-matrix-positive-definite)
