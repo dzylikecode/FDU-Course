@@ -66,6 +66,14 @@ flowchart LR
 
 本质上是几何观点, 向量场
 
+---
+
+R 的含义:
+
+- 物理隔离
+- 药物回复
+- 疫苗
+
 ## References
 
 - [rios - 知乎](https://www.zhihu.com/people/swstbe-54/posts) 上课笔记
