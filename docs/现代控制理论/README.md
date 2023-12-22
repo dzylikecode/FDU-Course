@@ -27,3 +27,7 @@ disturbance is placed between the controller and the actuator, which is quite co
 | ![](assets/2023-09-15-16-50-58.png) | ![](assets/2023-09-15-16-51-16.png) |
 
 等效, 可以将#1 的误差输入向前移动, 只需要除以 G
+
+- [（十三）判断稳定性：劳斯判据 - 知乎](https://zhuanlan.zhihu.com/p/355436161)
+
+- [自动控制原理 MOOC 3-3-4 劳斯判据 | 早做准备](https://xiaolan233.github.io/blog/7aed9687/)
