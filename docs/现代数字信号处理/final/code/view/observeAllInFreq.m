@@ -18,4 +18,6 @@ function observeAllInFreq(data, ax)
   xlabel(ax, 'Frequency (Hz)');
   ylabel(ax, '|P1(f)|');
   grid(ax, 'on');
+
+  Settings.getInstance().apply(ax);
 end
