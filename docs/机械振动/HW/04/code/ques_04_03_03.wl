@@ -63,4 +63,16 @@ MWW3 = MWW[W3]
 
 
 
+calcC[c_] := 1 /Sqrt[c]
+c1 = calcC[MWW1]
+c2 = calcC[MWW2]
+c3 = calcC[MWW3]
+
+
+calcEta0[W_] := Integrate[x^2 W[x], {x, 0, 1}]
+eta1 = c1 calcEta0[W1]
+eta2 = c2 calcEta0[W2]
+eta3 = c3 calcEta0[W3]
+
+
 
