@@ -111,6 +111,32 @@ labels = [
 ## 哲学
 
 - too long; don't read
+- 逐步迭代, 没必要去重构之前的代码, 因为会重复写, 逐步提升就好了
+
+## code
+
+### typst
+
+局部代码块
+
+```typst
+#{
+  let vecX = [$bold(mono(i))$]
+  let vecY = [$bold(mono(j))$]
+  let accForm(sub) = [
+    $bold(a)_sub &= acc(x, sub) vecX + acc(y, sub) vecY$
+  ]
+
+  $
+  cases(
+    accForm(1) &&= - g/59 vecY,
+    accForm(2) &&= g/59 vecY,
+    accForm(3) &&= - (13 g)/59 vecY,
+    accForm(4) &&= (11 g)/59 vecY
+  )
+  $
+}
+```
 
 ## References
 
