@@ -1,3 +1,5 @@
+#import "fig1.typ": fig1, fig2
+  
   #let lagOne = [第一类拉格朗日方程]
   #let acc(var, sub) = [$dot.double(var)_sub$]
   #let lagEqOne = [
@@ -32,10 +34,7 @@ $ y_2 = C_2 $
 $ x_1^(m_2) &= #x1m2 \
   y_1^(m_2) &= #y1m2 $
 
-#grid(
-  columns: (1fr, 2fr),
-  image("assets/2024-03-10-17-11-24.png",width:70%),
-  [
+#let explain = [
     设$A$坐标为$(0, C_A)$, 依据斜率恒定, 则有
 
     $ &-tan theta = k = (y_1^(m_2) - C_A)/(x_1^(m_2)) \ 
@@ -43,6 +42,15 @@ $ x_1^(m_2) &= #x1m2 \
     arrow.l.r.double &(#x1m2)  tan theta + (#y1m2) - C_A = 0\
     $
   ]
+
+#let source = box(explain, width: 100%)
+
+#table(
+  columns: 2,
+  stroke: none,
+  align: (center + horizon, center + horizon),
+  fig1,
+  source
 )
 
 综上, 约束方程为:
