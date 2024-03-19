@@ -103,7 +103,7 @@ $
   $ bold(F) - bold(M) bold(a) + bold(J)^T bold(lambda) = 0 $
 ]
 
-#move(
+#place(
   dx: 330pt,
   dy: -80pt,
   rect(

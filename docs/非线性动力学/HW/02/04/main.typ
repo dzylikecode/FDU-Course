@@ -90,7 +90,7 @@ cases(
 )
 $
 
-#move(
+#place(
   dx: 350pt,
   dy: -40pt,
   rect(

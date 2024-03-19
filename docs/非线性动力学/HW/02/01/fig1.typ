@@ -22,7 +22,7 @@
 #let dashLine1 = (dashLineX1, lineO2(dashLineX1)) // 虚线的起点
 #let dashLine2 = (dashLineX2, lineO2(dashLineX2)) // 虚线的终点
 
-#let fig1 = cetz.canvas(length: 3cm, {
+#let fig1 = cetz.canvas(length: 1.8cm, {
   import cetz.draw: *
 
   set-style(
