@@ -138,6 +138,59 @@ labels = [
 }
 ```
 
+常用:
+
+```typ
+#import "@preview/physica:0.9.2": *
+#import "@preview/colorful-boxes:1.2.0": *
+
+#set math.equation(numbering: "(1)")
+#show link: it => text(fill:blue, underline(it))
+
+#show ref: it => {
+  let eq = math.equation
+  let el = it.element
+  if el != none and el.func() == eq {
+    // Override equation references.
+    numbering(
+      el.numbering,
+      ..counter(eq).at(el.location())
+    )
+  } else {
+    // Other references as usual.
+    it
+  }
+}
+```
+
+便签
+
+```typ
+$
+sigma_(x x) &= E epsilon_(x x)
+#place(dx: 10pt, dy:-15pt, stickybox(width: 2.5cm, [
+  #set text(size: 8pt)
+  泊松比$nu = 0$
+]))
+$
+```
+
+```typ
+#let acc(..sink) = {
+  let args = sink.pos()
+  if args.len() == 1 {
+    let var = args.at(0)
+    $dot.double(var)$
+  } else if args.len() == 2 {
+    let var = args.at(0)
+    let sub = args.at(1)
+    $dot.double(var)_sub$
+  } else {
+    none
+  }
+}
+```
+
 ## References
 
 - [npubird/KnowledgeGraphCourse: 东南大学《知识图谱》研究生课程](https://github.com/npubird/KnowledgeGraphCourse)

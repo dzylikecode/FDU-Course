@@ -1,8 +1,8 @@
 function out = firTest1(data)
 	Fs  = data.freqSample; 	% sampling frequency 				| 采样频率
 	Fc  = 2;              	% cutoff frequency 					| 截止频率
-    N   = 20;               % Number of taps (filter order + 1) | 系数个数
-    Wn  = Fc/(Fs/2);        % normalized cutoff frequency 		| 归一化截止频率
+  N   = 20;               % Number of taps (filter order + 1) | 系数个数
+  Wn  = Fc/(Fs/2);        % normalized cutoff frequency 		| 归一化截止频率
 
 	b = fir1(N-1, Wn, hamming(N));
 

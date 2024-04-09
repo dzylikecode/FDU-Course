@@ -47,7 +47,7 @@ $
 由达朗贝尔原理可知
 
 $
-rho S dif x pdv(u, t, 2) = (F + pdv(F, x) dif x) - F + p(x, t)
+rho S dif x pdv(u, t, 2) = (F + pdv(F, x) dif x) - F + p(x, t) dif x
 $
 
 代入可得

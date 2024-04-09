@@ -27,3 +27,4 @@ dirty
 *.m4a
 *.log
 !all.pdf
+*.rar
