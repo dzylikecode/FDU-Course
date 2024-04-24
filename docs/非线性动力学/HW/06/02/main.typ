@@ -73,9 +73,9 @@ $ omega = 3 omega_0 + epsilon sigma $
 代入
 
 $
-3 overline(A)^2 Lambda e^(j (omega - 2 omega_0) T_1) &= 3 overline(A)^2 Lambda e^(j (omega_0 + epsilon sigma) T_1) \
-&= 3 alpha overline(A)^2 Lambda e^(j sigma T_1) e^(j omega_0 T_1)
-$
+3 alpha overline(A)^2 Lambda e^(j (omega - 2 omega_0) T_0) &= 3 overline(A)^2 Lambda e^(j (omega_0 + epsilon sigma) T_0) \
+&= 3 alpha overline(A)^2 Lambda e^(j sigma T_1) e^(j omega_0 T_0)
+quad T_1 = epsilon T_0 $
 
 $
 2 j omega_0(D_1 A + mu A) + 6 alpha A Lambda^2 + 3 alpha A^2 overline(A) + 3 alpha overline(A)^2 Lambda e^(j sigma T_1) = 0
