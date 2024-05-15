@@ -28,3 +28,4 @@ dirty
 *.log
 !all.pdf
 *.rar
+*.xlsx
