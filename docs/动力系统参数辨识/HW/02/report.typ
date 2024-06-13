@@ -159,7 +159,7 @@ mat(
 )
 $
 
-经分析, 有
+经分析, 摆动的幅度较小, 所以
 
 $
 d_2^2 acc(theta, 2) &= d_2^2 (-omega_2^2 theta_2) \
@@ -310,7 +310,167 @@ $
 - 简化复杂模型: 非线性模型通常很复杂且难以处理, 而通过线性化可以将复杂的非线性问题转换为相对简单的线性问题
 - 线性辨识方法成熟: 线性化后的模型可以直接应用线性辨识方法(如最小二乘法), 这些方法成熟且高效
 
-这里根据尽可能的合并同类项的方式, 得到了5个含有未知参数的的项, 进而定义了5个参数, 目的是为了尽量简单. 但是由于数值上的问题, 在近似的角度上, 第三个和第四个参数为实际上是线性相关的, 所以采用定义 4 个广义结构参数更好
+这里根据尽可能的合并同类项的方式, 得到了5个含有未知参数的的项, 进而定义了5个参数, 目的是为了尽量简单. 但是由于数值上的问题, 在近似的角度上, 第三个和第四个参数为实际上是线性相关的, 所以采用定义 4 个广义结构参数更好(事实上, 第一列和第三四列也是线性相关, 不过相对来说只有0.86. 合并为3个参数也是合理的)
+
+== 后续
+
+怀疑是动力学方程推导有误
+
+重新推导动力学方程为
+
+$
+(J_2 + J_3 + m_2 l_2^2 + m_3 l_3^2 + m_3 d_2^2 + 2 m_3 l_3 d_2 sin theta_3) acc(theta, 2) + (J_3 + m_3 l_3^2 + m_3 l_3 d_2 sin theta_3) acc(theta, 3) \
++ m_3 l_3 d_2 cos theta_3 vel(theta, 3)^2 + 2 m_3 l_3 d_2 cos theta_3 vel(theta, 2) vel(theta, 3) \
++ m_3 l_3 g cos (theta_2 + theta_3) - m_2 l_2 g sin theta_2 - m_3 d_2 g sin theta_2 = tau_(m_2) - tau_(f_2)
+$
+
+$
+(J_3 + m_3 l_3^2 + m_3 l_3 d_2 sin theta_3) acc(theta, 2) + (J_3 + m_3 l_3^2) acc(theta, 3) - m_3 l_3 d_2 cos theta_3 vel(theta, 2)^2 \
++ m_3 l_3 g cos (theta_2 + theta_3) = tau_(m_3) - tau_(f_3)
+$
+
+也就是:
+
++ 第一方程交叉项写错, 原来的$2 vel(theta, 2)$应为为$2 vel(theta, 2) vel(theta, 3)$
++ 第一个方程的势能符号错误, 原来的$-m_3 l_3 g cos (theta_2 + theta_3) + m_2 l_2 g sin theta_2 + m_3 d_2 g sin theta_2$应为$m_3 l_3 g cos (theta_2 + theta_3) - m_2 l_2 g sin theta_2 - m_3 d_2 g sin theta_2$
+
+然后采取正确的方程进行辨识的参数(没有处理条件数问题)存在以下问题
+
++ 参数存在负的, 不符合物理意义
+
+  $
+  mat(
+  -10.7306,
+    2.3474,
+   -0.3495,
+    3.9272,
+   -0.0622,
+    8.6621,
+   20.6233,
+    8.5619,
+   29.8808,
+  )
+  $
+
+
++ 预测效果差
+
+  #align(
+    center,
+    table(
+    columns: 3,
+    stroke: none,
+    [],
+    $tau_2$,
+    $tau_3$,
+    [组1],
+    image("figure/solve_1_m2.png"),
+    image("figure/solve_1_m3.png"),
+    [组5],
+    image("figure/solve_5_m2.png"),
+    image("figure/solve_5_m3.png"),
+  )
+  )
+
+
+然而, 将第二个方程改错, 把$+ m_3 l_3 g cos (theta_2 + theta_3)$改为$-m_3 l_3 g cos (theta_2 + theta_3)$, 则参数合理, 预测良好, 但是模型不对
+
++ 参数合理
+
+  $
+  mat(
+      1.8802,
+      0.2539,
+      1.2073,
+      1.9165,
+      0.4747,
+      8.6017,
+    21.2960,
+      8.5800,
+    29.6469,
+  )
+  $
+
++ 预测效果良好
+
+  #align(
+    center,
+    table(
+    columns: 3,
+    stroke: none,
+    [],
+    $tau_2$,
+    $tau_3$,
+    [组1],
+    image("figure/solve_fake_1_m2.png"),
+    image("figure/solve_fake_1_m3.png"),
+    [组5],
+    image("figure/solve_fake_5_m2.png"),
+    image("figure/solve_fake_5_m3.png"),
+  )
+  )
+
+考虑对残差分析(用预测减去测量)
+
+残差的图像如图
+
+#align(
+  center,
+  table(
+  columns: 3,
+  stroke: none,
+  [],
+  $tau_2$,
+  $tau_3$,
+  [组1],
+  image("figure/solve_fake_1_err2.png"),
+  image("figure/solve_fake_1_err3.png"),
+  [组5],
+  image("figure/solve_fake_5_err2.png"),
+  image("figure/solve_fake_5_err3.png"),
+)
+)
+
+计算得残差均值
+
+
+#align(
+  center,
+  table(
+  columns: 3,
+  stroke: none,
+  [MSE],
+  $tau_2$,
+  $tau_3$,
+  [组1],
+  [-0.985449],
+  [0.295012],
+  [组5],
+  [0.686250],
+  [0.027583],
+)
+)
+
+残差与预测的相关系数
+
+#align(
+  center,
+  table(
+  columns: 3,
+  stroke: none,
+  [corrcoef],
+  $tau_2$,
+  $tau_3$,
+  [组1],
+  [0.1897],
+  [0.0579],
+  [组5],
+  [0.0060],
+  [-0.1206],
+)
+)
+
+可以看到残差的均值以及与预测的相关系数都比较小, 说明参数合理
 
 == 代码
 

@@ -189,7 +189,13 @@ for i = setdiff(1:5, use_train_obj.train_index)
     xlabel('t');
     ylabel('\tau_2');
     legend;
-    mse2 = immse(obj.tau_m2, predict_tau_m2); fprintf('第%d组, t2: %f', i, mse2);
+
+    mse2 = immse(obj.tau_m2, predict_tau_m2);   fprintf('第%d组, t2 MSE: %f', i, mse2);
+    err2 = obj.tau_m2 - predict_tau_m2;
+    avgE2= mean(err2);                          fprintf('第%d组, t2 mean: %f', i, avgE2);
+    figure;
+    plot(t_list, err2);
+    r_err2 = corrcoef(predict_tau_m2, err2);    disp(r_err2);
 
     saveas(gcf, sprintf('../figure/%s_%d_m2.png', filename, i));
 
@@ -201,7 +207,13 @@ for i = setdiff(1:5, use_train_obj.train_index)
     xlabel('t');
     ylabel('\tau_3');
     legend;
+
     mse3 = immse(obj.tau_m3, predict_tau_m3); fprintf('第%d组, t2: %f', i, mse3);
+    err3 = obj.tau_m3 - predict_tau_m3;
+    avgE3= mean(err3);                          fprintf('第%d组, t2 mean: %f', i, avgE3);
+    figure;
+    plot(t_list, err3);
+    r_err3 = corrcoef(predict_tau_m3, err3);    disp(r_err3);
 
     saveas(gcf, sprintf('../figure/%s_%d_m3.png', filename, i));
 end
