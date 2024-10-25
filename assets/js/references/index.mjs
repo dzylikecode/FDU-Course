@@ -1,5 +1,5 @@
-import style from "./style.css" assert { type: "css" };
-import styleLight from "./style-light.css" assert { type: "css" };
+import style from "./style.css" with { type: "css" };
+import styleLight from "./style-light.css" with { type: "css" };
 import { extension } from "./extension.mjs";
 import { plugin } from "./plugin.mjs";
 import { markedExtensions, docsifyPlugins } from "../config.mjs";

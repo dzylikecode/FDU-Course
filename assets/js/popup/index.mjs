@@ -1,5 +1,5 @@
-import sheetLight from "./pop-up-light.css" assert { type: "css" };
-import sheet from "./pop-up.css" assert { type: "css" };
+import sheetLight from "./pop-up-light.css" with { type: "css" };
+import sheet from "./pop-up.css" with { type: "css" };
 import { extension } from "./extension.mjs";
 import { getContent, plugin } from "./plugin.mjs";
 import { docsifyPlugins, markedExtensions } from "../config.mjs";

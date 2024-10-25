@@ -1,5 +1,5 @@
 import katex from "https://cdn.jsdelivr.net/npm/katex@0.16.6/dist/katex.mjs";
-import sheet from "https://cdn.jsdelivr.net/npm/katex@0.16.6/dist/katex.css" assert { type: "css" };
+import sheet from "https://cdn.jsdelivr.net/npm/katex@0.16.6/dist/katex.css" with { type: "css" };
 
 import { markedExtensions } from "./config.mjs";
 

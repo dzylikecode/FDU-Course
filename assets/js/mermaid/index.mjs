@@ -8,7 +8,7 @@ import mermaid from "./mermaid.mjs";
 import { markedRender, docsifyPlugins } from "../config.mjs";
 import { render } from "./render.mjs";
 import { plugin } from "./plugin.mjs";
-import style from "./style.css" assert { type: "css" };
+import style from "./style.css" with { type: "css" };
 
 mermaid.initialize({
   startOnLoad: false,
